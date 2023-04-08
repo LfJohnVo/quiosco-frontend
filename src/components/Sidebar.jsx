@@ -7,13 +7,14 @@ export default function Sidebar() {
             <div className="p-4">
                 <img
                     className="w-32"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    src={`img/${"logo"}.png`}
                 />
             </div>
 
             <div className="mt-10">
                 {categorias.map((categoria) => (
                     <Categoria
+                        key={categoria.id}
                         categoria={categoria}
                     />
                 ))}
